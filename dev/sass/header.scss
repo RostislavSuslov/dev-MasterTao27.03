@@ -10,59 +10,43 @@ header {
     }
 }
 
-.btn-burger {
-    margin: 7px 0 0 auto;
-    position: relative;
-    border: none;
-    width: 27px;
-    height: 25px;
-    background-color: transparent;
-    border-top: 2px solid #fff;
-    transition: all .3s;
-
- 
-
-    &:before,
-    &:after {
-        background-color: #fff;
-        height: 2px;
-        width: 27px;
-        display: inline-block;
-        transition: all .3s;
-
-    }
-
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 9px;
-    }
-
-    &:after {
-        top: 20px;
-    }
-
-
-    &.active {
-        border-color: transparent;
-
-        &:before {
-            transform: rotate(230deg);
-            left: 2px;
-        }
-
-        &:after {
-            transform: rotate(-45deg);
-            top: 10px;
-            left: 2px;
-        }
-    }
+.hamburger-box {
+    width: 28px;
 }
 
+.hamburger {
+    margin: 0 0 0 auto;
+    transition: all .3s;
+    padding: 7px 0px;
+    display: none;
+}
 
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    height: 2px;
+    width: 27px;
+    background-color: #fff;
+}
 
+.hamburger-inner::before {
+    top: -11px;
+}
+
+.hamburger-inner::after {
+    bottom: -11px;
+}
+
+.hamburger--arrowalt.is-active .hamburger-inner::before {
+    top: 4px;
+}
+
+.hamburger--arrowalt.is-active .hamburger-inner::after {
+    bottom: 4px;
+}
 
 
 .mobile-container {
