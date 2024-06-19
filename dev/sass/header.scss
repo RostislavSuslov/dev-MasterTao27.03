@@ -1,8 +1,92 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+header {
+    .container {
+        display: flex;
+        padding-top: 25px;
+        padding-bottom: 39px;
+    }
+
+    .btn {
+        padding: 13px 21px;
+    }
+}
+
+.btn-burger {
+    margin: 7px 0 0 auto;
+    position: relative;
+    border: none;
+    width: 27px;
+    height: 25px;
+    background-color: transparent;
+    border-top: 2px solid #fff;
+    transition: all .3s;
+
+ 
+
+    &:before,
+    &:after {
+        background-color: #fff;
+        height: 2px;
+        width: 27px;
+        display: inline-block;
+        transition: all .3s;
+
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+    }
+
+    &:after {
+        top: 20px;
+    }
+
+
+    &.active {
+        border-color: transparent;
+
+        &:before {
+            transform: rotate(230deg);
+            left: 2px;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+            top: 10px;
+            left: 2px;
+        }
+    }
+}
+
+
+
+
+
+.mobile-container {
+    display: flex;
+    width: 100%;
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        margin: 5px auto 0;
+
+        a {
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &.show {
+        display: flex;
+    }
 }
