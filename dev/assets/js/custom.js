@@ -13,16 +13,26 @@ burger.addEventListener('click', toggleClass)
 
 const swiper = new Swiper('.banner-slider', {
     loop: true,
-    spaceBetween: 50,
-     
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-   
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+    spaceBetween: 20,
 
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+ 
+    navigation: {
+        enabled: false
+    },
+ 
+    breakpoints: {
+        // when window width is >= 320px
+        1025: {
+            spaceBetween: 50,
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+    }
 });
