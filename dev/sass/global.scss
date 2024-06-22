@@ -402,31 +402,31 @@ ul {
 
 
 
-.page-home {
-    section {
-        margin-top: 0;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: $section-margin-lg;
-        max-width: 1920px;
+// .page-home {
+//     section {
+//         margin-top: 0;
+//         margin-left: auto;
+//         margin-right: auto;
+//         margin-bottom: $section-margin-lg;
+//         max-width: 1920px;
 
-        &.container-fluid {
-            padding: 90px 85px 100px;
-            position: relative;
+//         &.container-fluid {
+//             padding: 90px 85px 100px;
+//             position: relative;
 
-            &:before {
-                content: "";
-                border-radius: 20px;
-                position: absolute;
-                left: 42px;
-                right: 42px;
-                top: 0;
-                height: 100%;
-                background-color: $bg-secondary;
-            }
-        }
-    }
-}
+//             &:before {
+//                 content: "";
+//                 border-radius: 20px;
+//                 position: absolute;
+//                 left: 42px;
+//                 right: 42px;
+//                 top: 0;
+//                 height: 100%;
+//                 background-color: $bg-secondary;
+//             }
+//         }
+//     }
+// }
 
 section {
     padding: 90px 0 100px;
