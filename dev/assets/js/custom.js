@@ -11,7 +11,7 @@ function toggleClass() {
 burger.addEventListener('click', toggleClass)
 
 
-const swiper = new Swiper('.banner-slider', {
+const swiper = new Swiper('#banner-slider', {
     loop: true,
     spaceBetween: 20,
 

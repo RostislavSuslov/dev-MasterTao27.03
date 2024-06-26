@@ -1,0 +1,50 @@
+.calculation-form {
+    padding: 48px 50px 61px;
+    background: $bg-secondary;
+    border-radius: 20px;
+    max-width: 626px;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 30px;
+}
+
+.form-column {
+    width: 100%;
+}
+
+.input-box {
+    margin: 0 0 17px;
+}
+
+
+.control-box {
+    margin-bottom: 13px;
+    &:first-child {
+        margin-top: 23px;
+    }
+    label {
+        font-size: 15px;
+    }
+}
+
+[type="file"] {
+    display: none;
+    + label {
+        font-size: 15px;
+        border: 1px dashed rgba(255, 255, 255, 0.2588235294);
+        width: 100%;
+        text-align: center;
+        padding: 13px;
+        line-height: 1;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: .3s;
+        &:hover {
+            border-color: $color-secondary;
+            color: $color-secondary;
+        }
+    }
+}

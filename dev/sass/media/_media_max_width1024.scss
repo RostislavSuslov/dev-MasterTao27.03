@@ -18,8 +18,7 @@
     .mobile-container {
         position: absolute;
         flex-direction: column;
-        background-color: #363A4D;
-        z-index: 1;
+        background-color: $bg-secondary;
         left: 0;
         right: 0;
         top: 69px;
@@ -69,7 +68,7 @@
             align-items: center;
         }
 
-        &-slider {
+        .swiper {
             height: calc(100vh - 74px);
             border-radius: 0;
         }
@@ -98,6 +97,9 @@
 
             h5 {
                 font-size: 16px;
+                padding: 0 12px;
+                line-height: 1.4;
+                margin-bottom: 18px;
             }
         }
     }

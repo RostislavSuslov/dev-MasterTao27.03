@@ -1,9 +1,9 @@
 .banner {
     .container {
-        padding-bottom: 100px;
+        padding-bottom: 65px;
     }
 
-    &-slider {
+    .swiper {
         height: 700px;
         border-radius: 20px;
     }
@@ -17,7 +17,7 @@
         h1 {
             text-transform: uppercase;
             max-width: 500px;
-            margin-bottom: 8px;
+            margin-bottom: 11px;
         }
 
         h5 {
@@ -52,7 +52,7 @@
 
 .navigation {
   position: absolute;
-  max-width: 1523px;
+  max-width: 1575px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
