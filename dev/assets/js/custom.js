@@ -11,7 +11,7 @@ function toggleClass() {
 burger.addEventListener('click', toggleClass)
 
 
-const swiper = new Swiper('#banner-slider', {
+const swiperBanner = new Swiper('#banner-slider', {
     loop: true,
     spaceBetween: 20,
 
@@ -36,3 +36,43 @@ const swiper = new Swiper('#banner-slider', {
         },
     }
 });
+
+const typeFile = document.querySelectorAll('.custom-file')
+
+typeFile.forEach(item=>{
+    item.addEventListener('change', ()=> {
+        const fileName = item.closest('.control-box').querySelector('.file-name')
+        fileName.innerHTML = item.files[0].name;
+    })
+})
+
+const advantagesSlideLength = document.querySelectorAll('.advantages .swiper-slide').length
+
+const swiperAdvantages = new Swiper('#advantages', {
+    spaceBetween: 12,
+    loop: true,
+    simulateTouch: true,
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: true,
+    },
+    breakpoints: {
+        1025: {
+            spaceBetween: 0,
+            loop: false,
+            slidesPerGroup: advantagesSlideLength,
+            simulateTouch: false,
+            pagination: {
+                enabled: false,
+                el: '.swiper-pagination',
+            }
+        }
+    }
+  });
+
+ 
+
+// const fileLable = document.querySelectorAll('.calculation-label');
+// fileLable.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))

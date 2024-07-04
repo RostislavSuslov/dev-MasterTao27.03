@@ -1,0 +1,51 @@
+.advantage {
+    max-width: 263px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.advantages {
+    &-img {
+        width: 113px;
+        height: 113px;
+        border: 1px solid #6C7188;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 22px;
+
+        img {
+            width: 93px;
+            height: 93px;
+            background: $color-secondary;
+            border-radius: 50%;
+            object-fit: scale-down;
+            padding: 10px;
+        }
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 24px;
+    }
+}
+
+
+
+.cel-img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    background: #89c249;
+    margin: 0 auto 36px;
+}
+
+.cel {
+    max-width: 485px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 0 25px;
+}

@@ -3,12 +3,13 @@
         <div class="template-title case-3">
             <h2>Получить рассчет стоимости доставки вашего груза</h2>
         </div>
+
         <form class="calculation-form">
             <div class="form-row">
                 <div class="form-column">
                     <div class="input-box">
                         <label for="category">Категория товара:</label>
-                        <input id="category" type="text" placeholder="Категория товара">
+                        <input id="category" type="text" value="12345" placeholder="Категория товара">
                     </div>
                     <div class="input-box">
                         <label for="weight">Вес груза (кг):</label>
@@ -45,28 +46,30 @@
                 </div>
             </div>
             <div class="form-row">
-               
+
                 <div class="form-column">
                     <div class="control-box">
-                        <input id="product-photo" type="file">
+                        <div class="file-name"></div>
+                        <input id="product-photo" class="custom-file" type="file">
                         <label for="product-photo">Загрузить фото товара</label>
                     </div>
                 </div>
             </div>
             <div class="form-row">
                 <!-- <div class="form-column">
-                    <div class="input-box">
-                        <label for="category">Категория товара:</label>
-                        <input id="category" type="text">
-                    </div>
-                   
-                </div> -->
+                        <div class="input-box">
+                            <label for="category">Категория товара:</label>
+                            <input id="category" type="text">
+                        </div>
+                       
+                    </div> -->
                 <div class="form-column">
-                    <div class="control-box">
+                    <div class="input-box">
                         <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
                     </div>
                 </div>
             </div>
         </form>
+        <img src="assets/img/calculation-decoration.png" class="calculation-decoration" alt="calculation-decoration">
     </div>
 </section>

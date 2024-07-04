@@ -347,8 +347,8 @@ ul {
 }
 
 .scroll::-webkit-scrollbar {
-    margin: 5px;
-    width: 7px;
+    margin: 2px;
+    width: 2px;
     border-radius: 5px;
 }
 
@@ -402,7 +402,7 @@ ul {
 }
 
 section {
-    padding: 90px 0 100px;
+    padding: 90px 0 $section-margin-lg;
    // margin-bottom: $section-margin-lg;
 
     &.accent {

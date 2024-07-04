@@ -1,5 +1,10 @@
+.calculation {
+    .container {
+        position: relative;
+    }
+}
 .calculation-form {
-    padding: 48px 50px 61px;
+    padding: 48px 50px 44px;
     background: $bg-secondary;
     border-radius: 20px;
     max-width: 626px;
@@ -34,7 +39,7 @@
     display: none;
     + label {
         font-size: 15px;
-        border: 1px dashed rgba(255, 255, 255, 0.2588235294);
+        border: 1px dashed #ffffff42;
         width: 100%;
         text-align: center;
         padding: 13px;
@@ -42,9 +47,34 @@
         cursor: pointer;
         border-radius: 10px;
         transition: .3s;
+        margin-bottom: 12px;
+     
         &:hover {
             border-color: $color-secondary;
             color: $color-secondary;
         }
     }
+}
+
+.file-name {
+    font-size: 15px;
+    line-height: 1;
+    margin: -3px 0 15px 0;
+}
+
+
+.calculation-decoration {
+    position: absolute;
+    left: 612px;
+    bottom: -$section-margin-lg;
+    max-width: 560px;
+    width: 29.167vw;
+    min-width: 370px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
