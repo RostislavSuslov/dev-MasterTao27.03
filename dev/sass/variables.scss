@@ -9,7 +9,7 @@ $container-mobile-padding: 20px;
  
 $section-title-margin: 60px;
 $section-margin-lg: 115px;
-$section-margin: 60px;
+$section-margin: 55px 0 60px;
 
 @mixin fieldState {
     &:hover {
