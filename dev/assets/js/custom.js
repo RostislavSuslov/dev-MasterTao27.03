@@ -19,11 +19,11 @@ const swiperBanner = new Swiper('#banner-slider', {
         el: '.swiper-pagination',
         clickable: true,
     },
- 
+
     navigation: {
         enabled: false
     },
- 
+
     breakpoints: {
         // when window width is >= 320px
         1025: {
@@ -39,8 +39,8 @@ const swiperBanner = new Swiper('#banner-slider', {
 
 const typeFile = document.querySelectorAll('.custom-file')
 
-typeFile.forEach(item=>{
-    item.addEventListener('change', ()=> {
+typeFile.forEach(item => {
+    item.addEventListener('change', () => {
         const fileName = item.closest('.control-box').querySelector('.file-name')
         fileName.innerHTML = item.files[0].name;
     })
@@ -70,9 +70,51 @@ const swiperAdvantages = new Swiper('#advantages', {
             }
         }
     }
-  });
+});
 
- 
+const swiperTemplate = new Swiper('.slider-template', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    navigation: {
+        enabled: false
+    },
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        enabled: true,
+    },
+    
+    breakpoints: {
+        1025: {
+            slidesPerView: 2,
+            pagination: {
+                enabled: false,
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        },
+        1140: {
+            slidesPerView: 3,
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                enabled: false,
+                el: '.swiper-pagination',
+            },
+        }
+    }
+});
+
+
 
 // const fileLable = document.querySelectorAll('.calculation-label');
 // fileLable.forEach(item => item.closest('.form-row').previousElementSibling.classList.add('special-gap'))
