@@ -136,7 +136,9 @@
             &:after {
                 display: block;
             }
+
             text-align: center;
+
             h2 {
                 &:after {
                     display: none;
@@ -154,5 +156,25 @@
         display: none;
     }
 
+    .slider-template {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 335px;
+    }
 
+    .card {
+        --space: 23px;
+        width: 335px;
+        padding: 0 var(--space) 33px;
+        .img-box {
+            margin: 0 calc(var(--space * -1) 27px;
+        }
+        .btn-row {
+            gap: 12px;
+
+            .btn {
+                padding: 13px 8px;
+            }
+        }
+    }
 }

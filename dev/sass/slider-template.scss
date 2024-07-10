@@ -1,12 +1,30 @@
+.accent {
+    .slider-template {
+        &::after,
+        &::before {
+            background-color: $bg-secondary;
+        }
+    }
+}
+
 .card {
+    --space: 20px;
     width: 360px;
     background: $bg-secondary;
-    padding: 0 20px 27px;
+    padding: 0 var(--space) 33px;
     border-radius: 20px;
+    overflow: hidden;
     text-align: center;
+    border: none;
 
     .img-box {
-        margin: 0 -20px 27px;
+        margin: 0 calc(var(--space) * -1) 27px;
+
+        img {
+            height: 229px;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     .card-title {
@@ -20,17 +38,20 @@
         gap: 27px;
         margin-bottom: 12px;
         padding: 0;
-    
+
     }
 
     .option {
         img {
             margin-right: 10px;
+            max-width: 24px;
+            max-height: 24px;
         }
     }
 
     .price {
         margin-bottom: 7px;
+
         span {
             font-size: 22px;
             line-height: 125%;
@@ -50,10 +71,26 @@
     .btn-row {
         display: flex;
         gap: 14px;
+
         .btn {
             width: 50%;
             justify-content: center;
             padding: 13px;
         }
     }
+}
+
+
+.swiper-button-prev {
+    left: var(--swiper-navigation-sides-offset, -25px);
+}
+
+.swiper-button-next {
+    right: var(--swiper-navigation-sides-offset, -20px);
+}
+
+
+.swiper-pagination {
+    position: static;
+    margin-top: 30px;
 }

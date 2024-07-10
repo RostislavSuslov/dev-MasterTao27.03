@@ -14,4 +14,27 @@
 
         }
     }
+
+    .slider-template {
+        padding-left: 94px;
+        padding-right: 94px;
+    
+    
+        &::after,
+        &::before {
+            content: "";
+            width: 92px;
+            height: 100%;
+            position: absolute;
+            right: -13px;
+            top: 0;
+            background-color: $bg-primary;
+            z-index: 2;
+        }
+    
+        &::before {
+            right: auto;
+            left: -13px;
+        }
+    }
 }

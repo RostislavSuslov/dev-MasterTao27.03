@@ -100,6 +100,18 @@ const swiperTemplate = new Swiper('.slider-template', {
             },
         },
         1140: {
+            slidesPerView: 2,
+            navigation: {
+                enabled: true,
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                enabled: false,
+                el: '.swiper-pagination',
+            },
+        },
+        1300: {
             slidesPerView: 3,
             navigation: {
                 enabled: true,
@@ -114,6 +126,14 @@ const swiperTemplate = new Swiper('.slider-template', {
     }
 });
 
+
+
+const sliderTemplate = document.querySelectorAll('.slider-template')
+
+sliderTemplate.forEach(slider => {
+    slider.closest('.container').classList.add('container-lg') 
+    slider.closest('.container').classList.remove('container')
+})
 
 
 // const fileLable = document.querySelectorAll('.calculation-label');
