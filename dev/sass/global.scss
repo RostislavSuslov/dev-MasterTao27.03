@@ -571,3 +571,32 @@ body.overflow-hidden {
 .swiper-pagination {
     font-size: 0px;
 }
+
+
+/***/
+
+img {
+    --img-margin: 30px;
+    &.alignleft,
+    &.alignright {
+        max-width: calc(50% - var(--img-margin));
+    }
+
+    &.alignleft {
+        margin: 0 var(--img-margin) 25px 0;
+        float: left;
+    }
+
+    &.alignright {
+        margin: 0 0 25px var(--img-margin);
+        float: right;
+    }
+
+    &.aligncenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--img-margin);
+        max-width: 100%;
+    }
+}

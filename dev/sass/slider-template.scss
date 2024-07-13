@@ -11,11 +11,12 @@
     --space: 20px;
     width: 360px;
     background: $bg-secondary;
-    padding: 0 var(--space) 33px;
+    padding: 0 var(--space) 30px;
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
     border: none;
+    min-height: 482px;
 
     .img-box {
         margin: 0 calc(var(--space) * -1) 27px;
@@ -71,7 +72,7 @@
     .btn-row {
         display: flex;
         gap: 14px;
-
+        margin-top: auto;
         .btn {
             width: 50%;
             justify-content: center;
@@ -93,4 +94,25 @@
 .swiper-pagination {
     position: static;
     margin-top: 30px;
+}
+
+
+.services {
+    .card {
+        text-align: left;
+        justify-content: flex-end;
+        background: top center / contain no-repeat;
+        .btn-row {
+            margin-top: initial;
+        }
+        > * {
+            z-index: 1;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(4, 5, 17, 0.91) 0%, rgba(88, 88, 88, 0) 100%);
+        }
+    }
 }
